@@ -1,0 +1,117 @@
+header {
+  background-color: #fff;
+  height: 15vh;
+  box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+}
+
+header img {
+  width: 170px;
+}
+
+header a {
+  margin-left: 60px;
+  transition: 0.5s;
+  font-weight: 500;
+  color: #000;
+}
+
+header a:hover {
+  color: #27ae60;
+}
+
+header .nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+header .nav ul li {
+  margin-right: 20px;
+}
+
+header .nav ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #000;
+}
+
+header .toggle {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 0;
+  }
+
+  header img {
+    margin-top: 30px;
+  }
+
+  header .nav .flex {
+    display: none;
+  }
+
+  header .toggle {
+    display: block;
+    margin-top: 20px;
+  }
+
+  header .small {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    background-color: #27ae60;
+    padding: 20px;
+  }
+
+  header .small ul {
+    display: block;
+    text-align: left;
+  }
+
+  header .small ul li {
+    margin-bottom: 20px;
+  }
+
+  header li a {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+}
+
+.toggle button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.toggle button:focus {
+  outline: none;
+}
+.button .btn1 {
+  background-color: #bf690d;
+  color: #fff;
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button .btn1:hover {
+  background-color: #1e8449;
+}
+
+.button .btn1 i {
+  margin-right: 8px;
+}
